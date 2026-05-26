@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>오늘의 명언 - Support</title>
+    <style>
+        :root {
+            --bg: #f8f9fa;
+            --panel: #ffffff;
+            --text: #333333;
+            --muted: #666666;
+            --primary: #4a90e2;
+            --line: #dfe6ee;
+        }
+        * { box-sizing: border-box; }
+        body {
+            margin: 0;
+            font-family: "Malgun Gothic", "Apple SD Gothic Neo", Arial, sans-serif;
+            background: var(--bg);
+            color: var(--text);
+            line-height: 1.65;
+        }
+        main {
+            width: min(860px, calc(100% - 32px));
+            margin: 0 auto;
+            padding: 48px 0;
+        }
+        header {
+            border-bottom: 1px solid var(--line);
+            padding-bottom: 28px;
+            margin-bottom: 28px;
+        }
+        h1 {
+            margin: 0 0 10px;
+            font-size: clamp(2rem, 7vw, 3.3rem);
+            line-height: 1.05;
+            color: var(--primary);
+        }
+        h2 { margin: 30px 0 10px; }
+        p { margin: 0 0 12px; }
+        .subtitle {
+            color: var(--muted);
+            max-width: 620px;
+        }
+        .panel {
+            background: var(--panel);
+            border: 1px solid var(--line);
+            border-radius: 8px;
+            padding: 22px;
+            margin: 18px 0;
+        }
+        a {
+            color: var(--primary);
+            font-weight: 700;
+        }
+        .actions {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 12px;
+            margin-top: 20px;
+        }
+        .button {
+            display: inline-block;
+            border: 1px solid var(--line);
+            border-radius: 8px;
+            padding: 10px 14px;
+            background: #fff;
+            text-decoration: none;
+        }
+        .button.primary {
+            border-color: var(--primary);
+            background: var(--primary);
+            color: #fff;
+        }
+        footer {
+            border-top: 1px solid var(--line);
+            color: var(--muted);
+            font-size: 0.9rem;
+            margin-top: 36px;
+            padding-top: 18px;
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <header>
+            <h1>오늘의 명언</h1>
+            <p class="subtitle">매일 짧고 좋은 글귀를 읽을 수 있는 명언 앱입니다.</p>
+            <div class="actions">
+                <a class="button primary" href="../privacy/daily-quote.html">개인정보처리방침</a>
+                <a class="button" href="mailto:exile175r@gmail.com">문의하기</a>
+                <a class="button" href="../index.html">EverApp 홈</a>
+            </div>
+        </header>
+
+        <section class="panel">
+            <h2>앱 소개</h2>
+            <p>오늘의 명언은 짧고 좋은 글귀를 편하게 읽고, 마음에 드는 문장을 다시 볼 수 있도록 돕는 앱입니다.</p>
+        </section>
+
+        <section class="panel">
+            <h2>지원</h2>
+            <p>버그 신고, 앱 이용 문의, 개인정보 관련 문의는 아래 이메일로 보내주세요.</p>
+            <p><a href="mailto:exile175r@gmail.com">exile175r@gmail.com</a></p>
+        </section>
+
+        <footer>
+            <p>&copy; 2026 EverApp. 오늘의 명언 support page.</p>
+        </footer>
+    </main>
+</body>
+</html>
