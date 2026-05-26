@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jelly Block Adventure - Support</title>
+    <style>
+        :root {
+            --bg: #fff7ec;
+            --panel: #ffffff;
+            --text: #263238;
+            --muted: #5f6f73;
+            --primary: #ff6b6b;
+            --line: #eadfce;
+        }
+        * { box-sizing: border-box; }
+        body {
+            margin: 0;
+            font-family: "Malgun Gothic", "Apple SD Gothic Neo", Arial, sans-serif;
+            background: var(--bg);
+            color: var(--text);
+            line-height: 1.65;
+        }
+        main {
+            width: min(880px, calc(100% - 32px));
+            margin: 0 auto;
+            padding: 48px 0;
+        }
+        header {
+            border-bottom: 1px solid var(--line);
+            padding-bottom: 28px;
+            margin-bottom: 28px;
+        }
+        h1 {
+            margin: 0 0 10px;
+            font-size: clamp(2rem, 7vw, 3.5rem);
+            line-height: 1.05;
+            color: var(--primary);
+        }
+        h2 {
+            margin: 30px 0 10px;
+            font-size: 1.25rem;
+        }
+        p { margin: 0 0 12px; }
+        .subtitle {
+            max-width: 620px;
+            color: var(--muted);
+            font-size: 1.05rem;
+        }
+        .panel {
+            background: var(--panel);
+            border: 1px solid var(--line);
+            border-radius: 8px;
+            padding: 22px;
+            margin: 18px 0;
+        }
+        a {
+            color: var(--primary);
+            font-weight: 700;
+        }
+        .actions {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 12px;
+            margin-top: 20px;
+        }
+        .button {
+            display: inline-block;
+            border: 1px solid var(--line);
+            border-radius: 8px;
+            padding: 10px 14px;
+            background: #fff;
+            text-decoration: none;
+        }
+        .button.primary {
+            border-color: var(--primary);
+            background: var(--primary);
+            color: #fff;
+        }
+        ul {
+            margin: 8px 0 0;
+            padding-left: 22px;
+        }
+        footer {
+            border-top: 1px solid var(--line);
+            color: var(--muted);
+            font-size: 0.9rem;
+            margin-top: 36px;
+            padding-top: 18px;
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <header>
+            <h1>Jelly Block Adventure</h1>
+            <p class="subtitle">부드러운 젤리 블록을 10x10 보드에 배치하고, 줄과 열을 지우며 스테이지를 진행하는 캐주얼 퍼즐 게임입니다.</p>
+            <div class="actions">
+                <a class="button primary" href="../privacy/jelly-block-adventure.html">개인정보처리방침</a>
+                <a class="button" href="mailto:exile175r@gmail.com">문의하기</a>
+                <a class="button" href="../index.html">EverApp 홈</a>
+            </div>
+        </header>
+
+        <section class="panel">
+            <h2>게임 소개</h2>
+            <p>Jelly Block Adventure는 짧은 시간에도 즐길 수 있는 블록 퍼즐입니다. 블록을 보드에 놓고 가로줄과 세로줄을 완성해 점수를 얻습니다.</p>
+            <ul>
+                <li>60개의 로컬 스테이지</li>
+                <li>계속 도전할 수 있는 Endless Mode</li>
+                <li>로그인 없이 바로 플레이</li>
+                <li>진행 상태와 최고 점수는 기기에 저장</li>
+            </ul>
+        </section>
+
+        <section class="panel">
+            <h2>지원</h2>
+            <p>버그 신고, 테스트 피드백, 개인정보 관련 문의는 아래 이메일로 보내주세요.</p>
+            <p><a href="mailto:exile175r@gmail.com">exile175r@gmail.com</a></p>
+        </section>
+
+        <footer>
+            <p>&copy; 2026 EverApp. Jelly Block Adventure support page.</p>
+        </footer>
+    </main>
+</body>
+</html>
